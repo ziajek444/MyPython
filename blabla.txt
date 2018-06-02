@@ -1,0 +1,72 @@
+Python 3.6.0 (default, Jan 13 2017, 00:00:00) 
+[GCC 4.8.4] on linux
+
+
+
+>>> ord('a')
+97
+>>> bin(ord(s))
+'0b1110011'
+>>> var2 = bin(ord(s))
+>>> var2
+'0b1110011'
+>>> var = int(var)
+>>> var
+50
+>>> tryk = 0b001101
+>>> tryk
+13
+>>> sr='s'
+>>> sr
+'s'
+>>> sr+=sr
+>>> sr
+'ss'
+>>> sr+=chr(tryk)
+>>> sr
+'ss\r'
+>>> tryk=tryk>>1
+>>> tryk
+6
+>>> bin(tryk)
+'0b110'
+>>> result = tryk & 0b0011
+>>> bin(tryk)
+'0b110'
+>>> bin(result)
+'0b10'
+>>> pB=0b10111111
+>>> dB=0b11111110
+>>> pz=pB&0b00011111
+>>> pz
+31
+>>> bin(pz)
+'0b11111'
+>>> dz=pB&0b11100000
+>>> dz=dz>>5
+>>> bin(dz)
+'0b101'
+>>> z=dB&0b00000011
+>>> z=z<<3
+>>> bin(z)
+'0b10000'
+>>> z+=dz
+>>> z
+21
+>>> #21=>'10101'
+... 
+>>> jeden='1110'
+>>> jeden='01111'
+>>> jeden
+'01111'
+>>> jeden*=8
+>>> jeden
+'0111101111011110111101111011110111101111'
+>>> osemka=''
+>>> for i in range(8):
+...     osemka+=jeden[i]
+... 
+>>> osemka
+'01111011'
+
+int(osemka,base=2) #bardzo pomocne urz¹dz¹ko
